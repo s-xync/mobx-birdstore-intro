@@ -3,4 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import { Provider } from "mobx-react";
+import BirdStore from "./stores/BirdStore";
+
+ReactDOM.render(
+  <Provider BirdStore={BirdStore}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
