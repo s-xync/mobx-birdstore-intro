@@ -1,1 +1,1 @@
-# Mobx BirdStore Intro
+# Mobx Intro

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
 
+import Weather from "./components/Weather";
+
 @inject("BirdStore")
 @observer
 class App extends Component {
@@ -27,6 +29,7 @@ class App extends Component {
             <li key={index}>{bird}</li>
           ))}
         </ul>
+        <Weather />
       </div>
     );
   }
